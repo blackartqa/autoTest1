@@ -11,8 +11,8 @@ public class CashbackHackServiceTest {
         CashbackHackService service = new CashbackHackService();
         int amount = 900;
         int actual = 100;
-        int exception = service.remain(amount);
-        assertEquals(actual, exception);
+        int expection = service.remain(amount);
+        assertEquals(actual, expection);
     }
 
     @Test
@@ -20,15 +20,16 @@ public class CashbackHackServiceTest {
         CashbackHackService service = new CashbackHackService();
         int amount = 1000;
         int actual = 0;
-        int exception = service.remain(amount);
-        assertEquals(actual, exception);
+        int expection = service.remain(amount);
+        assertEquals(actual, expection);
     }
+
     @Test
     public void shouldAmountMore1000() {
         CashbackHackService service = new CashbackHackService();
         int amount = 1200;
         int actual = 800;
-        int exception = service.remain(amount);
-        assertEquals(actual, exception);
+        int expection = service.remain(amount);
+        assertEquals(actual, expection);
     }
 }
