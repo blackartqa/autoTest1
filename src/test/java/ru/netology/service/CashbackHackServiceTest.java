@@ -23,4 +23,12 @@ public class CashbackHackServiceTest {
         int exception = service.remain(amount);
         assertEquals(actual, exception);
     }
+    @Test
+    public void shouldAmountMore1000() {
+        CashbackHackService service = new CashbackHackService();
+        int amount = 1200;
+        int actual = 800;
+        int exception = service.remain(amount);
+        assertEquals(actual, exception);
+    }
 }
